@@ -1,0 +1,28 @@
+p {
+color: blue;
+font-size: 20px;
+}
+
+#paragraph {
+color: pink;
+font-size: 26px;
+}
+
+#First {
+color: green;
+font-size: 26px;
+}
+
+#Second {
+color: orange;
+font-size: 26px;
+}
+
+.header {
+color: blue;
+}
+
+.small {
+color: pink;
+font-size: 10px;
+}
