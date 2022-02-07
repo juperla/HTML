@@ -6,38 +6,35 @@
     <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form action="/handler.php" method="post">
-    <label for="clientName">Ваше ваш e-mail</label>
-    <input type="text" id="clientName" name="clientName"/>
-    <button type="submit">Отправить заявку</button>
-</form>
-<br/>
 
 <form action="/adress.php" method="post">
+    <p id="First"><a>Хотите получать наши обновления</a></p>
+    <label for="checkbox">Подписаться на обновления</label>
+    <input type="checkbox" id="checkbox" name="checkbox"/>
+    <br>
+    <hr>
     <label>Enter your first name</label>
     <input type="text" id="clientFirstName" name="clientFirstName">
     <br/>
 
     <label>Enter your last name</label>
     <input type="text" id="clientLasttName" name="clientLastName">
+    <br/>
+    <label>Enter your e-mail</label>
+    <input type="text" id="clientEmail" name="clientLastName">
 
     <button type="submit">Отправить заявку</button>
 </form>
 <br>
 <hr>
-<p id="First"><a>Хотите получать наши обновления</a></p>
-<label for="checkbox">Подписаться на обновления</label>
-<input type="checkbox" id="checkbox" name="checkbox"/>
 
-<br>
-<hr>
-<p id="Secon"><a>Как часто хотите получать наши обновления</a></p>
+<p id="Secon"><a>Какие новости вам будут интересны?</a></p>
 <form action="/radio.php" method="post">
-    <label>Постоянно<input type="radio" value="1" name="myRadio"/></label>
+    <label>Все новости<input type="radio" value="1" name="myRadio"/></label>
     <br>
-    <label>Иногда<input type="radio" value="2" name="myRadio"/></label>
+    <label>Выбранные темы<input type="radio" value="2" name="myRadio"/></label>
     <br>
-    <label>Никогда<input type="radio" value="3" name="myRadio"/></label>
+    <label>Не интересует подписка<input type="radio" value="3" name="myRadio"/></label>
     <br>
 
     <button type="submit">Отправить</button>
@@ -55,19 +52,5 @@
     </select></p>
     <p><input type="submit" value="Отправить"></p>
 </form>
-<br/>
-<hr/>
-<p id="paragraph"><a>Какие темы вас интересуют?</a></p>
-<form action="handler.php">
-    <p><select multiple size="1">
-        <option>Кино</option>
-        <option>Домино</option>
-        <option>Вино</option>
-        <option>Книги</option>
-    </select></p>
-    <p><input type="submit" value="Отправить"></p>
-</form>
-
-
 </body>
 </html>
