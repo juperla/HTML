@@ -8,36 +8,42 @@
 <body>
 
 <form action="/adress.php" method="post">
-    <p id="First"><a>Хотите получать наши обновления</a></p>
-    <label for="checkbox">Подписаться на обновления</label>
-    <input type="checkbox" id="checkbox" name="checkbox"/>
-    <br>
-    <hr>
-    <label>Enter your first name</label>
-    <input type="text" id="clientFirstName" name="clientFirstName">
-    <br/>
-
-    <label>Enter your last name</label>
-    <input type="text" id="clientLasttName" name="clientLastName">
-    <br/>
-    <label>Enter your e-mail</label>
-    <input type="text" id="clientEmail" name="clientLastName">
-
-    <button type="submit">Отправить заявку</button>
+    <fieldset>
+        <p id="First"><a>Хотите получать наши обновления?</a></p>
+        <label for="checkbox1">Подписаться на обновления</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1"/>
+        <br>
+        <label> Ваше имя: <input type="text" placeholder="Имя"></label>
+        <br>
+        <label> Ваш email: <input type="email" placeholder="Email"></label>
+        <br>
+        <br>
+        <label>
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+        </label>
+    </fieldset>
 </form>
 <br>
 <hr>
+<form>
+    <p>Как вам удобнее получать наши новости?</p>
+    <div>
+        <input type="radio" id="contactChoice1"
+               name="contact" value="email">
+        <label for="contactChoice1">Email</label>
 
-<p id="Secon"><a>Какие новости вам будут интересны?</a></p>
-<form action="/radio.php" method="post">
-    <label>Все новости<input type="radio" value="1" name="myRadio"/></label>
-    <br>
-    <label>Выбранные темы<input type="radio" value="2" name="myRadio"/></label>
-    <br>
-    <label>Не интересует подписка<input type="radio" value="3" name="myRadio"/></label>
-    <br>
+        <input type="radio" id="contactChoice2"
+               name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
 
-    <button type="submit">Отправить</button>
+        <input type="radio" id="contactChoice3"
+               name="contact" value="sms">
+        <label for="contactChoice3">Mail</label>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
 </form>
 <br>
 <hr>

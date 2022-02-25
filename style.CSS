@@ -26,3 +26,10 @@ color: blue;
 color: pink;
 font-size: 10px;
 }
+
+form{
+background-color:#ffffff;
+width:70%;
+margin:0 auto;
+padding:15px;
+}
