@@ -13,15 +13,13 @@
         <label for="checkbox1">Подписаться на обновления</label>
         <input type="checkbox" id="checkbox1" name="checkbox1"/>
         <br>
-        <label> Ваше имя: <input type="text" placeholder="Имя"></label>
+
+        <input type="text" name="name" title="Введите ваше имя" placeholder="Имя" required >
         <br>
-        <label> Ваш email: <input type="email" placeholder="Email"></label>
+        <input type="email" name="email" placeholder="Почта" required>
         <br>
-        <br>
-        <label>
-            <button type="submit">Отправить</button>
-            <button type="reset">Очистить</button>
-        </label>
+        <input type="submit" name="submit" value="Отправить">
+
     </fieldset>
 </form>
 <br>
@@ -29,27 +27,24 @@
 <form>
     <p>Как вам удобнее получать наши новости?</p>
     <div>
-        <input type="radio" id="contactChoice1"
-               name="contact" value="email">
+        <input type="radio" id="contactChoice1" name="contact" value="email">
         <label for="contactChoice1">Email</label>
 
-        <input type="radio" id="contactChoice2"
-               name="contact" value="phone">
+        <input type="radio" id="contactChoice2" name="contact" value="phone">
         <label for="contactChoice2">Phone</label>
 
-        <input type="radio" id="contactChoice3"
-               name="contact" value="sms">
-        <label for="contactChoice3">Mail</label>
+        <input type="radio" id="contactChoice3" name="contact" value="sms">
+        <label for="contactChoice3">Sms</label>
     </div>
     <div>
-        <button type="submit">Submit</button>
+        <input type="submit" name="submit" value="Отправить">
     </div>
 </form>
 <br>
 <hr>
 <p id="Second"><a>Какие темы вас интересуют?</a></p>
 <form action="select1.php" method="post">
-    <p><select size="3" multiple name="hero[]">
+    <p><select size="3" multiple name="topic[]">
         <option disabled>Выберите</option>
         <option value="Метро">Метро</option>
         <option selected value="Кино">Кино</option>
