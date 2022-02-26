@@ -18,27 +18,18 @@
         <br>
         <input type="email" name="email" placeholder="Почта" required>
         <br>
-        <input type="submit" name="submit" value="Отправить">
+        <input type="submit" value="Отправить">
 
     </fieldset>
 </form>
 <br>
 <hr>
-<form>
+<form action="/adress.php" method="post">
     <p>Как вам удобнее получать наши новости?</p>
-    <div>
-        <input type="radio" id="contactChoice1" name="contact" value="email">
-        <label for="contactChoice1">Email</label>
-
-        <input type="radio" id="contactChoice2" name="contact" value="phone">
-        <label for="contactChoice2">Phone</label>
-
-        <input type="radio" id="contactChoice3" name="contact" value="sms">
-        <label for="contactChoice3">Sms</label>
-    </div>
-    <div>
-        <input type="submit" name="submit" value="Отправить">
-    </div>
+    <p><input type="radio" name="contact" value="email" checked> Email</p>
+    <p><input type="radio" name="contact" value="phone"> Phone</p>
+    <p><input type="radio" name="contact" value="sms"> Sms</p>
+    <p><input type="submit" value="Выбрать"></p>
 </form>
 <br>
 <hr>
